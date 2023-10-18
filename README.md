@@ -34,17 +34,26 @@
 
 - Go variables are statically-typed, similar to Rust.
 - Variables are defined by explicitly specifying a type
+
+  ```Golang
+  var test int
+  ```
+
   - var test int
 - Can also be defined using an initializer, the compiler will assign the var type
-  - test := 10
+
+  ```Golang
+  test := 10
+  ```
+
 - Once declared, vars can be assigned with `=`
 - A var cannot change type in its lifetime.
 
-    ```Golang
-    count := 100 // Create a var and assign initial value
-    count = 101 // Change the value to 101 
-    count = "test" // This will fail while compiling due to type change
-    ```
+  ```Golang
+  count := 100 // Create a var and assign initial value
+  count = 101 // Change the value to 101 
+  count = "test" // This will fail while compiling due to type change
+  ```
 
 - Constants are similar to variables, but are immutable during the lifetime.
 
